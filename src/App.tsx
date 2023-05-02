@@ -1,25 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import { Box, Grid, Typography } from "@mui/material";
+import CallMadeSharpIcon from "@mui/icons-material/CallMadeSharp";
+
+import ChairOutlinedIcon from "@mui/icons-material/ChairOutlined";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import HorizontalRuleIcon from "@mui/icons-material/HorizontalRule";
+import NavBar from "./components/navBar";
+import MainContainer from "./components/mainContents";
+
+import img1 from "./im/img1.png";
+import img2 from "./im/img2.png";
+import QuoteSection from "./components/quote";
+import Footer from "./components/footer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Box>
+      <NavBar />
+
+      <MainContainer />
+      <QuoteSection />
+      <Footer />
+    </Box>
   );
 }
 
